@@ -50,7 +50,7 @@ final class Log {
         final Scanner scanner = new Scanner(System.in);
 
         // Ask user for the length of maple logs
-        System.out.print("Enter the length of logs in meters (0.25, 0.5, or 1): ");
+        System.out.print("Enter the length of logs in meters: ");
         final double logLength = scanner.nextDouble();
 
         // Calculate the weight of one log based on its length
@@ -60,7 +60,7 @@ final class Log {
         final int numOfLogs = (int) (LOGGING_TRUCK_LIMIT / logWeight);
 
         // Display the result
-        System.out.println("Number of maple logs that can be placed on the truck: " + numOfLogs);
+        System.out.println("Logs placed on the truck: " + numOfLogs);
 
         System.out.println("\nDone.");
 
