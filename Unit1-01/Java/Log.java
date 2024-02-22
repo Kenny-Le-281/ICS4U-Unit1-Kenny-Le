@@ -18,6 +18,17 @@ import java.util.Scanner;
 * be placed on a logging truck.
 */
 final class Log {
+    /**
+     * Constants.
+     *
+     */
+    public static final double MASS_OF_LOGS = 20.0;
+
+    /**
+     * Constants.
+     *
+     */
+    public static final int LOGGING_TRUCK_LIMIT = 1100;
 
     /**
     * Prevent instantiation.
@@ -29,10 +40,6 @@ final class Log {
     private Log() {
         throw new IllegalStateException("Cannot be instantiated");
     }
-
-    // Constants
-    static final double MASS_OF_LOGS = 20.0;
-    static final int LOGGING_TRUCK_LIMIT = 1100;
 
     /**
     * The starting main() function.
@@ -54,10 +61,10 @@ final class Log {
 
         // Display the result
         System.out.println("Number of maple logs that can be placed on the truck: " + numOfLogs);
-	
-	System.out.println("\nDone.");
 
-	    scanner.close();
+        System.out.println("\nDone.");
+
+        scanner.close();
     }
 }
 
