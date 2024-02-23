@@ -67,4 +67,7 @@ final class Log {
         scanner.close();
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Unit1-02
