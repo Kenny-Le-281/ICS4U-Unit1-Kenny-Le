@@ -23,7 +23,11 @@ console.log(`The truck can carry ${String(numberOfLogs)} logs that are ${Number(
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 console.log('\nDone.')
+=======
+console.log('\nDone.')
+>>>>>>> Unit1-02
 =======
 console.log('\nDone.')
 >>>>>>> Unit1-02
