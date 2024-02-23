@@ -55,3 +55,4 @@ final class Energy {
         System.out.println("\nDone.");
     }
 }
+
