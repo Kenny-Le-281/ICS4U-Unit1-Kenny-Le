@@ -24,6 +24,11 @@ if (isNaN(mass) == true || mass < 0) {
   // output
   console.log(`${mass} kg of mass would produce ${energy.toExponential(10)} J of energy.`)
 }
+<<<<<<< HEAD
  
 console.log("\nDone.")
 
+=======
+
+console.log("\nDone.")
+>>>>>>> Unit1-03

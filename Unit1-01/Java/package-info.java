@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 * This is the package-info.java file.
 *
 * @author  Mr Coxall
@@ -22,6 +23,8 @@ package ca.mths.ics4u
 >>>>>>> Unit1-02
 =======
 >>>>>>> Unit1-02
+=======
+>>>>>>> Unit1-03
  * This is the package-info.java file.
  *
  * @author  Mr Coxall
@@ -33,6 +36,7 @@ package ca.mths.ics4u;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> Unit1-02
 =======
 >>>>>>> Unit1-02
@@ -40,3 +44,5 @@ package ca.mths.ics4u;
 >>>>>>> Unit1-02
 =======
 >>>>>>> Unit1-02
+=======
+>>>>>>> Unit1-03
