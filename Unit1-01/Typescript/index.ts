@@ -21,4 +21,8 @@ let numberOfLogs = logTruckLimit / logWeightTotal
 
 console.log(`The truck can carry ${String(numberOfLogs)} logs that are ${Number(lengthOfLog.value)} meters long.`)
 
+<<<<<<< HEAD
 console.log('\nDone.')
+=======
+console.log('\nDone.')
+>>>>>>> Unit1-02
