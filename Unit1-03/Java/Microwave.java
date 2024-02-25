@@ -73,7 +73,7 @@ final class Microwave {
         }
 
         // Getting user input
-        System.out.print("How many " + food + "(s) are you cooking(max:3):");
+        System.out.print("How many " + food + "(s) are you cooking(max:3): ");
         final String amountString = s.next();
 
         try {
@@ -102,7 +102,7 @@ final class Microwave {
             System.out.println("Input invalid :(");
         } finally {
             // Done
-            System.out.println("\nDone");
+            System.out.println("\nDone.");
         }
     }
 }
