@@ -23,6 +23,7 @@ jobs:
           LINTER_RULES_PATH: /
           VALIDATE_CLANG_FORMAT: false
           VALIDATE_JAVASCRIPT_STANDARD: false
+          VALIDATE_GOOGLE_JAVA_FORMAT: false
           VALIDATE_TYPESCRIPT_STANDARD: false
           VALIDATE_PYTHON_FLAKE8: false
           VALIDATE_GITLEAKS: false # for secrets detection
