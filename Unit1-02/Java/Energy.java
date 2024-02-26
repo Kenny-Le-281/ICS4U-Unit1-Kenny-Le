@@ -38,7 +38,7 @@ final class Energy {
      * @param args No args will be used
      */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try {
             final Scanner input = new Scanner(System.in);
             System.out.print("Enter the mass of the object in kilograms: ");
