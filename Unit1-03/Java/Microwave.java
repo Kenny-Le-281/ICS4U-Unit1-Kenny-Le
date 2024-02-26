@@ -37,7 +37,7 @@ final class Microwave {
     * @return return the index found
     */
 
-    public static int includes(String[] arr, String word) {
+    public static int includes(final String[] arr, final String word) {
         int counter = 0;
         int result = -1;
         for (String s : arr) {
