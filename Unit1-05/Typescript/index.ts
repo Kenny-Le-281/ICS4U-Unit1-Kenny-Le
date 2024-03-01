@@ -8,8 +8,9 @@
 
 import { createPrompt } from 'bun-promptx'
 
-function BoardFoot(width: number, height: number) {
-    const lengthInInches = 144 / ( width * height);
+function checkBoardFoot(width, number) {
+    const boardFoot = 144
+    const lengthInInches = boardFoot / (width * height);
     return lengthInInches;
 }
 
