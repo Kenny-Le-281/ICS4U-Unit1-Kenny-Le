@@ -31,7 +31,7 @@ final class BoardFoot {
     * @param height of the wood
     * @return length needed to be considered a board foot
     */
-    static float checkBoardLength(float width, float height) {
+    static float checkBoardLength(final float width, final float height) {
         final float boardFoot = 144;
         final float length = boardFoot / (width * height);
         return length;
@@ -53,8 +53,8 @@ final class BoardFoot {
             final float height = Float.parseFloat(scanner.nextLine());
             if (width > 0 && height > 0) {
                 final float length = checkBoardLength(width, height);
-                System.out.println("The would should be" + length
-                                 + "inche(es) long");
+                System.out.println("The wood should be " + length
+                                 + " inche(es) long.");
             } else {
                 // Input is invalid
                 Integer.parseInt(null);
