@@ -9,6 +9,7 @@
 import { createPrompt } from 'bun-promptx'
 
 function checkBoardFoot(width, height) {
+// this function calculates the length of a boardFoot
   const boardFoot = 144
   const lengthInInches = boardFoot / (width * height);
   return lengthInInches;
