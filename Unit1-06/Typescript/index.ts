@@ -1,34 +1,61 @@
-// get arguments
-//
-import { readFileSync } from 'fs';
+/**
+*
+* This program checks the mean and median of a list of integers in a text file
+*
+* By:      Kenny Le
+* Version: 1.0
+* Since:   2024-03-03
+*/
 
-function calculateMean(arrayNumberSet) {
-// this fuction calculates the mean
-  let sum = 0;
-    // Calculate the sum of all numbers in the array
-    for (let i = 0; i < arrayNumberSet.length; i++) {
-        sum += arrayNumberSet[i];
-    }
+import { createPrompt } from 'bun-promptx'
+import { readFileSync } from 'fs'
 
-    // Calculate the mean by dividing the sum by the number of elements
-    const mean = sum / arrayNumberSet.length;
-    return mean;
+// Finds the mean of an array of numbers
+function findMean(list) {
+  let sumOfNumbers = 0
+  for (let counter = 0; counter < list.length; counter++) {
+    sumOfNumbers = sumOfNumbers + list[counter]
+  }
+  const mean = sumOfNumbers / list.length
+  return mean
 }
 
-// print process.argv
-process.argv.forEach(function (val, index, array) {
-  console.log(index + ': ' + val)
-})
+// Finds the median of an array of numbers
+function findMedian(list) {
+  list.sort(function(a, b){return a - b})
+  const halfLength = list.length / 2
+  const remainder = halfLength % 1
+  let median = 0
+  if (remainder != 0) {
+    median = list[halfLength - 0.5]
+  } else {
+    median = (list[halfLength - 1] + list[halfLength]) / 2
+  }
+  return median
+}
 
-console.log(process.argv[2])
+// Get array of numbers
+let array = readFileSync(process.argv[2], 'utf8').toString().split("\n")
+array = array.map((str) => parseInt(str, 10)) // Convert string to int
 
+// Error check
+let errorPassed = true
+for (let counter = 0; counter < array.length; counter++) {
+  if (isNaN(array[counter]) == true) {
+    console.log('Array contains a NaN value.')
+    errorPassed = false
+    break
+  }
+}
 
-const file = readFileSync(process.argv[2], 'utf8')
-// console.log(file)
+if (errorPassed == true) {
+  // Find mean and median
+  console.log(`Current array: ${array}\n`)
+  const mean = findMean(array)
+  const median = findMedian(array)
+  console.log(`The mean is ${mean}`)
+  console.log(`The median is ${median}`)
+}
 
-const arrayNumberSet  = file.split(/\r?\n/)
-// pop last element, since it will be empty (the EOF)
-arrayNumberSet.pop()
-console.log(arrayNumberSet)
-const mean = calculateMean(arrayNumberSet)
-console.log(mean)
+// Show the program as done
+console.log('\nDone.')
