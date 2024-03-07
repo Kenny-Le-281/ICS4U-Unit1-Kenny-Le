@@ -36,7 +36,7 @@ final class MeanMedianMode {
     * @param list of numbers
     * @return mean of the list
     */
-    static double findMean(int[] list) {
+    static double findMean(final int[] list) {
         int sumOfNumbers = 0;
         for (int counter = 0; counter < list.length; counter++) {
             sumOfNumbers = sumOfNumbers + list[counter];
@@ -51,7 +51,7 @@ final class MeanMedianMode {
     * @param list of numbers
     * @return median of the list
     */
-    static double findMedian(int[] list) {
+    static double findMedian(final int[] list) {
         Arrays.sort(list);
         final double halfLength = (double) list.length / 2;
         final double remainder = halfLength % 1;
