@@ -17,7 +17,7 @@ import java.util.Scanner;
 /**
 * This is the program.
 */
-final class MeanMedianMode {
+final class MeanMedian {
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -26,7 +26,7 @@ final class MeanMedianMode {
     * @throws IllegalStateException if this is ever called
     *
     */
-    private MeanMedianMode() {
+    private MeanMedian() {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
@@ -36,7 +36,7 @@ final class MeanMedianMode {
     * @param list of numbers
     * @return mean of the list
     */
-    public static double findMean(final int[] list) {
+    static double findMean(int[] list) {
         int sumOfNumbers = 0;
         for (int counter = 0; counter < list.length; counter++) {
             sumOfNumbers = sumOfNumbers + list[counter];
@@ -51,7 +51,7 @@ final class MeanMedianMode {
     * @param list of numbers
     * @return median of the list
     */
-    public static double findMedian(final int[] list) {
+    static double findMedian(int[] list) {
         Arrays.sort(list);
         final double halfLength = (double) list.length / 2;
         final double remainder = halfLength % 1;
@@ -75,7 +75,7 @@ final class MeanMedianMode {
         // Check if input is valid
         try {
             // Find number of lines in the file
-            final String fileName = "file.txt";
+            final String fileName = args[0];
             final BufferedReader reader = new BufferedReader(
                                     new FileReader(fileName)
             );
@@ -113,4 +113,3 @@ final class MeanMedianMode {
         System.out.println("\nDone.");
     }
 }
-
