@@ -17,7 +17,7 @@ import java.util.Scanner;
 /**
 * This is the program.
 */
-final class MeanMedian {
+final class MeanMedianMode {
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -26,7 +26,7 @@ final class MeanMedian {
     * @throws IllegalStateException if this is ever called
     *
     */
-    private MeanMedian() {
+    private MeanMedianMode() {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
