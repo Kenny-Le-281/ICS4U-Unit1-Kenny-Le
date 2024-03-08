@@ -36,7 +36,7 @@ for (var counter = 0; counter < 24; counter++) {
   const normalNumber = generateGaussian(75, 10)
   sum = sum + normalNumber
   if (listCount == 0) {
-    array = array + ('Student Number' + studentCount) + ':'
+    array = array + ('Student Number' + studentCount) + ','
     studentCount++
   }
   array = array + Math.floor(normalNumber) + ','
