@@ -23,7 +23,7 @@ function generateGaussian(mean: number ,std: number){
 
 // Add first row
 let array = 'Name,'
-for (let counter = 1; counter < 9; counter ++) {
+for (let counter = 1; counter < 5; counter ++) {
   array = array + ('Assignment' + counter) + ','
 }
 array = array + "\n"
@@ -36,11 +36,11 @@ for (var counter = 0; counter < 24; counter++) {
   const normalNumber = generateGaussian(75, 10)
   sum = sum + normalNumber
   if (listCount == 0) {
-    array = array + ('Student Number' + studentCount) + ','
+    array = array + ('Student' + studentCount) + ','
     studentCount++
   }
   array = array + Math.floor(normalNumber) + ','
-  if (listCount == 8) {
+  if (listCount == 3) {
     array = array + '\n'
     listCount = 0
   } else {
