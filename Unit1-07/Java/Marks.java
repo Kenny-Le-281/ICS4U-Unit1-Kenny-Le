@@ -76,7 +76,7 @@ final class Marks {
         }
 
         // Average
-        final float  average = sum / totalNumbers;
+        final float average = sum / totalNumbers;
 
         // Create file
         try {
