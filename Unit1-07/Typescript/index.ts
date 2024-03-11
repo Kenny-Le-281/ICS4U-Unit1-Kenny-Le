@@ -53,7 +53,7 @@ let average = sum / counter
 
 console.log("\nMark Average: " + average.toFixed(2) + "\n")
 console.log(array)
-writeFileSync("NormalNumbers.csv", array)
+writeFileSync("Marks.csv", array)
 
 console.log("\nDone.")
 
