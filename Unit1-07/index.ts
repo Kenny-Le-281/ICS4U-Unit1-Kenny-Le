@@ -48,6 +48,9 @@ for (var counter = 0; counter < 24; counter++) {
   }
 }
 
-console.log("\nMark Average: " + sum / counter + "\n")
+// Calculate average
+let average = sum / counter
+
+console.log("\nMark Average: " + average.toFixed(2) + "\n")
 console.log(array)
 writeFileSync("NormalNumbers.csv", array)
