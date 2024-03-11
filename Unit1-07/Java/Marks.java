@@ -80,7 +80,7 @@ final class Marks {
 
         // Create file
         try {
-            final String fileName = "NormalNumbers.csv";
+            final String fileName = "Marks.csv";
             final File textFile = new File(fileName);
             final FileWriter writeTextFile = new FileWriter(fileName);
 
