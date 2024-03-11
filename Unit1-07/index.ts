@@ -9,7 +9,7 @@
 
 import { writeFileSync } from "fs"
 
-function generateGaussian(mean: number ,std: number){
+function generateGaussian(mean, std){
   // https://discourse.psychopy.org/t/javascript-gaussian-function/17724/2
   var _2PI = Math.PI * 2;
   var u1 = Math.random();
